@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8828F1A2A40025F00645518 /* test.pcm in Resources */ = {isa = PBXBuildFile; fileRef = D8828F182A40025F00645518 /* test.pcm */; };
+		D8828F1B2A40025F00645518 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8828F192A40025F00645518 /* test.mp3 */; };
 		D8D35D61243C51160081BAF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D35D60243C51160081BAF7 /* AppDelegate.m */; };
 		D8D35D64243C51160081BAF7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D35D63243C51160081BAF7 /* SceneDelegate.m */; };
 		D8D35D67243C51160081BAF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D35D66243C51160081BAF7 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8828F142A3FFE1900645518 /* Gists-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gists-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8828F172A40006900645518 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D8828F182A40025F00645518 /* test.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pcm; sourceTree = "<group>"; };
+		D8828F192A40025F00645518 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		D8D35D5C243C51160081BAF7 /* Gists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D35D5F243C51160081BAF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8D35D60243C51160081BAF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,8 +54,10 @@
 		D8D35D53243C51160081BAF7 = {
 			isa = PBXGroup;
 			children = (
+				D8828F172A40006900645518 /* MyPlayground.playground */,
 				D8D35D5E243C51160081BAF7 /* Gists */,
 				D8D35D5D243C51160081BAF7 /* Products */,
+				D8828F142A3FFE1900645518 /* Gists-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +72,8 @@
 		D8D35D5E243C51160081BAF7 /* Gists */ = {
 			isa = PBXGroup;
 			children = (
+				D8828F182A40025F00645518 /* test.pcm */,
+				D8828F192A40025F00645518 /* test.mp3 */,
 				D8D35D5F243C51160081BAF7 /* AppDelegate.h */,
 				D8D35D60243C51160081BAF7 /* AppDelegate.m */,
 				D8D35D62243C51160081BAF7 /* SceneDelegate.h */,
@@ -107,11 +117,13 @@
 		D8D35D54243C51160081BAF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "于晓鹏";
 				TargetAttributes = {
 					D8D35D5B243C51160081BAF7 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -140,6 +152,8 @@
 			files = (
 				D8D35D6F243C51190081BAF7 /* LaunchScreen.storyboard in Resources */,
 				D8D35D6C243C51190081BAF7 /* Assets.xcassets in Resources */,
+				D8828F1A2A40025F00645518 /* test.pcm in Resources */,
+				D8828F1B2A40025F00645518 /* test.mp3 in Resources */,
 				D8D35D6A243C51160081BAF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +221,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -265,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,6 +303,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -295,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9DVRVF27D;
 				INFOPLIST_FILE = Gists/Info.plist;
@@ -304,6 +322,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiaopeng.Gists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gists-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -312,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9DVRVF27D;
 				INFOPLIST_FILE = Gists/Info.plist;
@@ -321,6 +343,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiaopeng.Gists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gists-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
